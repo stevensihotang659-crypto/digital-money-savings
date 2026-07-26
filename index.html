@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo Tabungan</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Blur -->
+<div class="bg-animation">
+    <span class="blur blur1"></span>
+    <span class="blur blur2"></span>
+    <span class="blur blur3"></span>
+</div>
+
+<!-- ===========================
+        HALAMAN 1
+=========================== -->
+<section id="home" class="page active">
+
+    <div class="home-box">
+
+        <h1>
+            Welcome to <br>
+            <span>Saldo Tabungan 💸</span>
+        </h1>
+
+        <p>
+            Web ini adalah tempat untuk kamu menabung,
+            kamu bisa ubah nominalnya.
+        </p>
+
+        <button id="lihatSaldo" class="primary-btn ripple">
+            Lihat Saldo
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        HALAMAN 2
+=========================== -->
+<section id="saldoPage" class="page">
+
+    <!-- Header -->
+    <header class="topbar">
+
+        <h2>
+            Saldo Tabungan Anda 🌿
+        </h2>
+
+    </header>
+
+    <!-- Content -->
+    <div class="saldo-wrapper">
+
+        <!-- Card -->
+        <div class="saldo-card">
+
+            <div class="saldo-title">
+                Total Saldo
+            </div>
+
+            <div id="saldoNominal" class="saldo-number">
+                Rp 0
+            </div>
+
+        </div>
+
+        <!-- Tombol -->
+        <button id="ubahSaldo" class="primary-btn ripple">
+
+            Ubah Nominal Saldo
+
+        </button>
+
+        <p class="motivasi">
+
+            Semangat Nabungnya 💸
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+        MODAL
+=========================== -->
+
+<div id="popup" class="modal">
+
+    <div class="modal-box">
+
+        <h2>
+            Ubah Nominal
+        </h2>
+
+        <input
+            type="number"
+            id="saldoInput"
+            placeholder="Masukkan nominal">
+
+        <div class="modal-button">
+
+            <button id="simpanSaldo" class="save">
+
+                ✔ Simpan
+
+            </button>
+
+            <button id="batalPopup" class="cancel">
+
+                ✖ Batal
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
